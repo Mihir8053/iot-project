@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+      </header>
+
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">water_drop</span>  WQI
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">waves</span> PH
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">opacity</span> TURBIDITY
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined"><span class="material-symbols-outlined">
+                device_thermostat
+                </span></span> TEMPERATURE
+            </a>
+            </li>
+            <!-- <li class="sidebar-list-item">
+              <a href="#" target="_blank">
+                <span class="material-icons-outlined"><span class="material-symbols-outlined">water_medium</span></span>PH
+              </a>
+            </li> -->
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> Predictions
+            </a>
+          </li>
+        </ul>
+      </aside>
+ 
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>TURBIDITY</h3>
+              <span class="material-icons-outlined">opacity</span>
+            </div>
+            <h1>3.44</h1>
+          </div>
+      
+          <div class="card">
+            <div class="card-inner">
+              <h3>TEMPERATURE</h3>
+              <span class="material-icons-outlined">thermostat</span>
+            </div>
+            <h1>85</h1>
+          </div>
+      
+          <div class="card">
+            <div class="card-inner">
+              <h3>PH value</h3>
+              <span class="material-icons-outlined">water</span>
+            </div>
+            <h1>8.06</h1>
+          </div>
+      
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Predictions</h3>
+              <span class="material-icons-outlined">trending_up</span>
+            </div>
+            <h1>96.112</h1>
+          </div>
+
+        </div>
+
+        <div class="charts">
+          <div class="charts-card">
+            <h2 class="chart-title">SAMPLE WATER TABLE</h2>
+            <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>TURBIDITY</th>
+                  <th>PH</th>
+                  <th>TEMPERATURE</th>
+                  <th>PREDICTION</th>
+                </tr>
+              </thead>
+              <!-- <tbody id="data-output">
+
+              </tbody> -->
+              <tr>
+                <td>3.44 NTU</td>
+                <td>8.06</td>
+                <td>85°C</td>
+                <td>96.112</td>
+              </tr>
+              <tr>
+                <td>4.8 NTU</td>
+                <td>4.6</td>
+                <td>45.5°C</td>
+                <td>63.57</td>
+              </tr>
+              <tr>
+                <td>0.8 NTU</td>
+                <td>8.8</td>
+                <td>39.6°C</td>
+                <td>53.78</td>
+              </tr>
+              <tr>
+                <td>7 NTU</td>
+                <td>5.7</td>
+                <td>35.5°C</td>
+                <td>49.32</td>
+              </tr>
+              <tr>
+                <td>5.7 NTU</td>
+                <td>7</td>
+                <td>34.5°C</td>
+                <td>66.50</td>
+              </tr>
+              
+            </table>
+          </div>
+          </div>
+        
+        </div>
+        
+      </main>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script src="js/check.js"></script> -->
+  </body>
+</html>

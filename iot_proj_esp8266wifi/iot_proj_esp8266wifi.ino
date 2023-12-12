@@ -6,7 +6,7 @@
 
 #ifndef STASSID
 #define STASSID "Mihir"
-#define STAPSK "9427110748"
+#define STAPSK "password"
 #endif
 
 void setup() {
